@@ -80,6 +80,7 @@
         console.log(bike2.getDetails());//details of bike2
     </script>
     -->
+    <!--
     <script>
         // Encapsulation example
         class Person
@@ -105,6 +106,27 @@
         let person1 = new Person('Mukul',21);
         person1.add_Address('Delhi');
         person1.getDetails();
+    </script>
+    -->
+    <script>
+        // Encapsulation example
+        class Employee
+        {
+            constructor(employeeid,employeename)
+            {
+                this.employeeid=employeeid;
+                this.employeename = employeename;
+            }
+            display()
+            {
+                console.log(`ID of the employee is: ${this.employeeid}`);
+                console.log(`Name of the employee is: ${this.employeename}`);
+            }
+        }
+        let employee1 = new Employee(131,'Raj');
+        let employee2 = new Employee(121,'Raju');
+        employee1.display();
+        employee2.display();
     </script>
 </body>
 </html>
