@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super keyword in JS</title>
+</head>
+<body>
+    <!--1)'super' keyword is used to call immediate parent class's constructor-->
+    <!--
+    <script>
+        class Person
+        {
+            constructor(person_name) 
+            {
+                this.name = person_name;
+            }
+            getPersonName() 
+            {
+                return this.name;
+            }
+        }
+        class Aadhar extends Person 
+        {
+            constructor(person_name,AadharID)
+            {
+                super(person_name);
+                this.AadharID = AadharID;
+            }
+            showAadharId() 
+            {
+                return 'The Aadhar ID for the person '+ this.getPersonName() +' is : '+this.AadharID;
+            }
+        }
+        var person_id = new Aadhar('Rajesh','5000 0000 0000 0000');
+        //document.write(person_id.showAadharId());
+        console.log(person_id.showAadharId());
+    </script>
+    -->
+    <!--
+    <script>
+        class Animal
+        {
+            constructor()
+            {
+                console.log("Animal is eating meat.");
+            }
+        }
+        class Dog extends Animal
+        {
+            constructor()
+            {
+                super();
+                console.log("Dog is eating bread.");
+            }
+        }
+        let d=new Dog();
+    </script>
+    -->
+    <!--2)'super' keyword is used to call immediate parent class's method-->
+    <!--
+    <script>
+        class Person
+        {
+            constructor(person_name) 
+            {
+                this.name = person_name;
+            }
+            getPersonName() 
+            {
+                return 'The person name is : '+this.name;
+            }
+        }
+        class Aadhar extends Person 
+        {
+            constructor(person_name,PANID)
+            {
+                super(person_name);
+                this.PANID = PANID;
+            }
+            show_PAN_CARD_ID() 
+            {
+                return super.getPersonName() +' and the PAN Card ID is : '+this.PANID;
+            }
+        }
+        var person_id = new Aadhar('Ravi','DD JJN 7854 A');
+        //document.getElementById('super').innerHTML = person_id.show_PAN_CARD_ID();
+    </script>
+    -->
+</body>
+</html>
