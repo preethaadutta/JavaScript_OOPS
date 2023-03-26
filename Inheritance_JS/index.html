@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Inheritance in JS</title>
+</head>
+<body>
+    <!--
+    <script>
+        // parent class
+        class Person 
+        {
+            //constructor of parent class
+            constructor(name) 
+            {
+                this.name = name;
+            }
+            //method of parent class
+            greet() 
+            {
+                console.log(`Hello ${this.name}`);
+            }
+        }
+        // child class
+        class Student extends Person 
+        {
+            //method of child class
+            study()
+            {
+                console.log("Learning JS");
+            }
+        }
+        //creating object of child class
+        let student1 = new Student('Jack');
+        student1.study();
+        student1.greet();
+    </script>
+    -->
+    <!--
+    <script>
+        // parent class
+        class Person 
+        {
+            greet() 
+            {
+                console.log("Hello Student");
+            }
+        }
+        // inheriting parent class
+        class Student extends Person 
+        {
+            study()
+            {
+                console.log("Learning JS");
+            }
+        }
+        //creating object of child class
+        let student1 = new Student();
+        student1.study();
+        student1.greet();
+    </script>
+    -->
+    <script>
+        // parent class
+        class A 
+        {
+            //method of parent class
+            sum(x,y) 
+            {
+                let s=x+y;
+                console.log(`Sum: ${s}`);
+            }
+        }
+        // child class
+        class B extends A 
+        {
+            //method of child class
+            sub(x,y)
+            {
+                let s=x-y;
+                console.log(`Sub: ${s}`);
+            }
+        }
+        //creating object of child class
+        let b = new B();
+        b.sum(2,4);
+        b.sub(4,1);
+    </script>
+</body>
+</html>
