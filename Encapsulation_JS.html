@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encapsulation in JS</title>
+</head>
+<body>
+    <!--
+    <script>
+        class Student  
+        {
+            constructor()
+            { 
+                var name;
+                var marks;  
+            }
+            //setter methods
+            setName(name)
+            {
+                this.name=name;  
+            }
+            setMarks(marks)
+            {
+                this.marks=marks;
+            }
+            //getter methods
+            getName()  
+            {
+                return this.name;  
+            }
+            getMarks()
+            {
+                return this.marks;
+            }
+        }  
+        var student1=new Student();
+        var student2=new Student(); 
+        student1.setName("John");  
+        student1.setMarks(80);
+        student2.setName("Johan");  
+        student2.setMarks(40);
+        console.log("Name of the Student is:" +student1.getName());
+        console.log("Marks of the Student is:" +student1.getMarks());
+        console.log("Name of the Student is:" +student2.getName());
+        console.log("Marks of the Student is:" +student2.getMarks());
+        //document.writeln(stud.getName()+" "+stud.getMarks()); 
+    </script>
+    -->
+    <!--
+    <script>
+        // Defining class using es6
+        class Vehicle 
+        {
+            constructor(name, maker, engine) 
+            {
+                this.name = name;
+                this.maker =  maker;
+                this.engine = engine;
+            }
+            getDetails()
+            {
+                return (`The name of the bike is ${this.name}.
+                The company of the bike is ${this.maker}.
+                The engine of the bike is ${this.engine}.
+                       `);
+            }
+        }
+        // Making object with the help of the constructor
+        let bike1 = new Vehicle('Hayabusa', 'Suzuki', '1340cc');
+        let bike2 = new Vehicle('Ninja', 'Kawasaki', '998cc'); 
+        console.log(bike1.name);//Hayabusa
+        console.log(bike1.maker);//Suzuki
+        console.log(bike1.engine);//1340cc
+        console.log(bike2.name);//Ninjaa
+        console.log(bike2.maker);//Kawasaki
+        console.log(bike2.engine);//998cc
+        console.log(bike1.getDetails());//details of bike1
+        console.log(bike2.getDetails());//details of bike2
+    </script>
+    -->
+    <script>
+        // Encapsulation example
+        class Person
+        {
+            constructor(name,id)
+            {
+                this.name = name;
+                this.id = id;
+            }
+            add_Address(address)
+            {
+                this.address = address;
+            }
+            getDetails()
+            {
+                console.log
+                (`
+                Name is: ${this.name},
+                Address is: ${this.address}
+                `);
+            }
+        }
+        let person1 = new Person('Mukul',21);
+        person1.add_Address('Delhi');
+        person1.getDetails();
+    </script>
+</body>
+</html>
